@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li><img src="photos/photo1.jpg" alt=""></li>
+                <li><img src="photos/photo2.jpg" alt=""></li>
+                <li><img src="photos/photo4.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $(".carousel").flipster({
+            style: 'carousel',
+            spacing: -0.1,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
